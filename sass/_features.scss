@@ -1,0 +1,23 @@
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: var(--large-res);
+  align-items: start;
+}
+
+.feature {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  gap: var(--small);
+
+  &__icon {
+    color: var(--color-primary);
+    font-size: 4.5rem;
+    transform: translateY(-1rem);
+    grid-row: 1 / span 2;
+  }
+
+  &__text {
+    font-size: 1.7rem;
+  }
+}
